@@ -2,7 +2,7 @@ import { useState } from 'react';
 import About from './components/About';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Project from './components/Project';
+import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 
@@ -12,7 +12,7 @@ function App() {
   // const [resumeSelected, setResumeSelected] = useState(false);
   const [focus] = useState([
         'About',
-        'Project',
+        'Portfolio',
         'Contact',
         'Resume'
   ])
@@ -36,7 +36,7 @@ function App() {
         ) : currentFocus === focus[3]? (
           <Resume></Resume>
         ) : (
-          <Project></Project>
+          <Portfolio></Portfolio>
         )
         }
       </main>

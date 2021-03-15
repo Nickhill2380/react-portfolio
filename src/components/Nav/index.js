@@ -14,7 +14,7 @@ function Nav(props) {
                     </span>
                 </li>
                 <li >
-                   <span onClick={() => setCurrentFocus(focus[1])}> Projects </span>
+                   <span onClick={() => setCurrentFocus(focus[1])}> Portfolio </span>
                 </li>
                 <li className={`mx-2`}>
                 <span onClick={() => setCurrentFocus(focus[2])}>Contact </span>
