@@ -3,8 +3,9 @@ import Nav from '../Nav';
 
 function Header(props) {
     const {
-        contactSelected,
-        setContactSelected
+        focus=[],
+        currentFocus,
+        setCurrentFocus
     }= props;
 
     return(
@@ -14,8 +15,11 @@ function Header(props) {
                     Nick Hill
                 </a>
             </h1>
-            <Nav contactSelected={contactSelected}
-        setContactSelected={setContactSelected}/>
+            <Nav 
+            focus={focus}
+            currentFocus={currentFocus}
+            setCurrentFocus={setCurrentFocus}
+            />
         </section>
     )
 }

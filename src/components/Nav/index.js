@@ -1,25 +1,26 @@
 function Nav(props) {
     const {
-        contactSelected,
-        setContactSelected
+        focus=[],
+        // currentFocus,
+        setCurrentFocus
     }= props;
 
     return(
         <nav>
             <ul className="flex-row">
                 <li className="mx-2">
-                    <a href="#about" onClick={() => setContactSelected(false)}>
+                    <span onClick={() => setCurrentFocus(focus[0])}>
                         About Me
-                    </a>
+                    </span>
                 </li>
                 <li >
-                   <span onClick={() => setContactSelected(false)}> Projects </span>
+                   <span onClick={() => setCurrentFocus(focus[1])}> Projects </span>
                 </li>
-                <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-                <span onClick={() => setContactSelected(true)}>Contact </span>
+                <li className={`mx-2`}>
+                <span onClick={() => setCurrentFocus(focus[2])}>Contact </span>
                 </li>
                 <li>
-                   <span onClick={() => setContactSelected(false)}> Resume </span>
+                   <span onClick={() => setCurrentFocus(focus[3])}> Resume </span>
                 </li>
             </ul>
         </nav>
