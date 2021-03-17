@@ -21,13 +21,11 @@ function App() {
 
   return (
     <div>
-      <header>
         <Header 
         focus={focus}
         currentFocus={currentFocus}
         setCurrentFocus= {setCurrentFocus}
         />
-      </header>
       <main>
         { currentFocus === focus[0] ?(
             <About></About>

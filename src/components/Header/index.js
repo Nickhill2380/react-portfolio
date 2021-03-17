@@ -10,6 +10,7 @@ function Header(props) {
 
     return(
         <section>
+            <header id="bg">
             <h1>
                 <a href="/">
                     Nick Hill
@@ -20,6 +21,7 @@ function Header(props) {
             currentFocus={currentFocus}
             setCurrentFocus={setCurrentFocus}
             />
+            </header>
         </section>
     )
 }

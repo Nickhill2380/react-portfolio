@@ -12,7 +12,7 @@ function Resume() {
 
     return (
         <section>
-            <div>
+            <div className="foreground">
                 <h2>Front-End Skills</h2>
                 <ul>
                     <li>HTML</li>

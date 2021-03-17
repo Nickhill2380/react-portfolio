@@ -41,7 +41,7 @@ function Portfolio() {
     ])
 
     return (
-        <div>
+        <div className="project-container">
             {projects.map((image) => (
                 <img
                 src={image.photo}
