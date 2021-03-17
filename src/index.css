@@ -144,3 +144,38 @@ footer {
 h2 {
   text-align: center;
 }
+
+
+#contact-form input, #contact-form textarea {
+  border: 1px solid var(--secondary-color);
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: var(--secondary-color);
+  width: 90%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75);
+}
+
+#contact-form input:focus, #contact-form textarea:focus{
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+}
+
+#contact-form button{
+  width: 90%;
+  border: none;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+#contact-form button:hover {
+  color: var(--primary-color);
+  background: var(--tertiary-color);
+}
