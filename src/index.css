@@ -1,9 +1,8 @@
 /* CSS HEX */
 :root {
---davys-grey: #50514fff;
---fire-opal: #f25f5cff;
---celadon-blue: #247ba0ff;
---tea-green: #d3fcd5ff;
+  --primary-color: #1f6f8b;
+  --secondary-color: #99a8b2;
+  --tertiary-color: #e6d5b8;
 }
 
 body {
@@ -13,15 +12,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--tea-green);
-  color: var(--davys-grey);
+  color: var(--primary-color);
+  background-color:  #1c2b2d;
   
 }
 
 #bg {
   height: 100%;
   width: 100%;
-  background-color: var(--fire-opal) ;
+  background-color: white;
   clip-path: polygon(0 0, 100% 0%, 100% 79%, 0 100%);
   z-index: -1;
 }
@@ -47,7 +46,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  color: var(--secondary-color);
+  color: var(#1c2b2d);
 }
 
 header h1 {
@@ -81,7 +80,7 @@ header nav ul li{
 
 header nav ul li:hover {
   border-radius: 15px;
-  background: var(--primary-color);
+  background: var(--secondary-color);
 }
 
 
@@ -106,4 +105,42 @@ footer {
 .project-container {
   display: flex;
   flex-wrap:wrap;
+}
+
+#resume {
+  background-image: url(../src/assets/images/desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+#about-info {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 640px;
+    padding: 20px 40px 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#profile-pic {
+  height: 40%;
+  width: 40%;
+  align-self: flex-start;
+  object-fit: contain;    
+  margin: 20px 30px 0 0;
+}
+
+.info p{
+  text-align: right;
+  color: var(--primary-color);
+  flex: 1 1 auto;
+  width: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-self: flex-end;
+}
+
+h2 {
+  text-align: center;
 }

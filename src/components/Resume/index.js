@@ -2,17 +2,12 @@ import resumeFile from '../../assets/documents/nick-hill-resume.pdf'
 
 function Resume() {
 
-    // const blob = new Blob ([resumeFile]);
-    // const fileDownloadUrl = URL.createObjectURL(blob);
-    // this.setState({ fileDownloadUrl: fileDownloadUrl}, 
-    //     () => {
-    //         this.dofileDownload.click();
-    //         URL.revokeObjectURL(fileDownloadUrl)
-    //     })
-
     return (
         <section>
-            <div className="foreground">
+            <div id="resume">
+                </div>
+                <div>
+                <div>
                 <h2>Front-End Skills</h2>
                 <ul>
                     <li>HTML</li>
@@ -30,7 +25,9 @@ function Resume() {
                     <li>SQL</li>
                 </ul>
             </div>
+            
             <a href={resumeFile} download={resumeFile}>Download Resume</a>
+            </div>
         </section>
     )
 }
