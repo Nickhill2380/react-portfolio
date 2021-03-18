@@ -1,5 +1,5 @@
 import gitLogo from '../../assets/icons/GitHub-Mark-64px.png';
-import linkedLogo from '../../assets/images/LI-Logo.png';
+import linkedLogo from '../../assets/icons/LI-In-Bug.png';
 
 function footer() {
     return (
