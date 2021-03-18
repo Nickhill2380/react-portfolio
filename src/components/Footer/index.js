@@ -1,4 +1,4 @@
-import gitLogo from '../../assets/images/GitHub_Logo.png';
+import gitLogo from '../../assets/icons/GitHub-Mark-64px.png';
 import linkedLogo from '../../assets/images/LI-Logo.png';
 
 function footer() {

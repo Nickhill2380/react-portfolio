@@ -29,14 +29,13 @@ code {
 }
 
 .logo {
-  height: 100x;
-  width: 200px;
+  height: 64px;
   align-self: center;
+  padding: 10px;
 }
 
 .logo:hover {
-  height: 200px;
-  width: 400px;
+  opacity: 50%;
 }
 
 
