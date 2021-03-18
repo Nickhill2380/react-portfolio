@@ -82,9 +82,9 @@ function Portfolio() {
                     setIsShown(false);
                 }}
                 >
-                        <a href={image.url}>{image.name}</a>
-                        <a href={image.github}><img src={githubLogo} alt="Github"></img></a>
-                        <p>{image.description}</p>
+                        <a href={image.url} className="img-details">{image.name}</a>
+                        <a href={image.github} className="img-details"><img src={githubLogo} alt="Github"></img></a>
+                        <p className="img-details">{image.description}</p>
                         
                         </div>
                     
