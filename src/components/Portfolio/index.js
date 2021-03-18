@@ -40,16 +40,38 @@ function Portfolio() {
         }
     ])
 
+    const[isShown, setIsShown] = useState(false);
+
     return (
-        <div className="project-container">
+        <div className="project-container"
+           
+        >
             {projects.map((image) => (
-                <img
+                <>
+                
+                {!isShown && (<img
+                onMouseEnter={() => setIsShown(true)}
+                onMouseLeave={() => setIsShown(false)}
                 src={image.photo}
                 alt={image.name}
                 className="img-thumbnail mx-1"
                 key={image.name}
-                />
+                /> )}
+                
+            {isShown && (
+                    <img className="img-info mx1" onMouseLeave={() => setIsShown(false)}
+                        src={image.photo}
+                        alt={image.name}
+                        key={image.name}
+                        />
+                    
+                    )
+                }
+            
+            
+            </>
             ))}
+            
         </div>
     )
 }

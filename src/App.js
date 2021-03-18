@@ -26,7 +26,7 @@ function App() {
         currentFocus={currentFocus}
         setCurrentFocus= {setCurrentFocus}
         />
-      <main>
+      <main id="bg">
         { currentFocus === focus[0] ?(
             <About></About>
         ): currentFocus === focus[2]? (

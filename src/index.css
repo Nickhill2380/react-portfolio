@@ -14,17 +14,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--primary-color);
   background-color:  #1c2b2d;
-  
-}
-
-#bg {
   height: 100%;
-  width: 100%;
-  background-color: white;
-  clip-path: polygon(0 0, 100% 0%, 100% 79%, 0 100%);
-  z-index: -1;
 }
 
+main {
+  position: relative;
+  min-height: 100%;
+  height: auto import !important;
+  height: 100%;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -47,6 +45,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   color: var(#1c2b2d);
+  background-color: var(--tertiary-color);
 }
 
 header h1 {
@@ -85,8 +84,13 @@ header nav ul li:hover {
 
 
 footer {
-  text-align: center;
-  color: var(--secondary-color);
+  position: relative;
+  top: 250px;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--tertiary-color)
 }
 
 .img-thumbnail {
@@ -178,4 +182,18 @@ h2 {
 #contact-form button:hover {
   color: var(--primary-color);
   background: var(--tertiary-color);
+}
+
+.img-info {
+    width: 25%;
+    min-height: 300px;
+    background-size: cover;
+    display: flex;
+    padding: 50px;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 50%;
 }

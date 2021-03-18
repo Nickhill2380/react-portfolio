@@ -10,7 +10,7 @@ function Header(props) {
 
     return(
         <section>
-            <header id="bg">
+            <header>
             <h1>
                 <a href="/">
                     Nick Hill
