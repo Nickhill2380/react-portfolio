@@ -7,10 +7,10 @@ function Project(props) {
     const {image} = props;
 
     return(
-        <div>
+        <div 
+        onMouseEnter={()=>setIsShown(true)}
+        onMouseLeave={() => setIsShown(false)}>
             {!isShown && (<img
-                onMouseEnter={()=>setIsShown(true)}
-                onMouseLeave={() => setIsShown(false)}
                 src={image.photo}
                 alt={image.name}
                 className="img-thumbnail mx-1"
@@ -21,9 +21,6 @@ function Project(props) {
                 <div className="img-info mx-1" 
                 style={{backgroundImage: `url(${image.photo})`}}
                 key={image.name}
-                onMouseLeave={() => {
-                    setIsShown(false);
-                }}
                 >
                         <a href={image.url} className="img-details">{image.name}</a>
                         <a href={image.github} className="img-details"><img src={githubLogo} alt="Github"></img></a>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import * as emailjs from 'emailjs-com';
+import desktop from '../../assets/images/desktop.jpg'
 
 import { validateEmail } from '../../utils/helpers';
 
@@ -62,6 +63,7 @@ function ContactForm() {
     <section>
       <h2>Contact me</h2>
       <div id="contact-container">
+      <img id="desktop" src={desktop} alt="Nick's desktop"></img>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>

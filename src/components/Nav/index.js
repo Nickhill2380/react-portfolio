@@ -20,7 +20,7 @@ function Nav(props) {
                 <span onClick={() => setCurrentFocus(focus[2])}>Contact </span>
                 </li>
                 <li className={`mx-2 ${currentFocus === focus[3] && 'navActive'}`}>
-                   <span onClick={() => setCurrentFocus(focus[3])}> Resume </span>
+                   <span onClick={() => setCurrentFocus(focus[3])}> Résumé </span>
                 </li>
             </ul>
         </nav>

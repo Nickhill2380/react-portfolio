@@ -1,8 +1,8 @@
 import { useState } from "react"
 import special from '../../assets/images/something-special.png';
 import dungeon from '../../assets/images/dungeonsend.png';
-import run from '../../assets/images/run-buddy.png';
-import food from '../../assets/images/food-festival.png';
+import notes from '../../assets/images/note-taker.png';
+import pizza from '../../assets/images/pizza-hunt.png';
 import tech from '../../assets/images/tech-blog.png';
 import budget from '../../assets/images/budget-tracker.png';
 import Project from '../Project/index.js';
@@ -12,31 +12,31 @@ function Portfolio() {
     const [projects] = useState([
         {
             name: 'Something Special',
-            description: 'Group two Project',
+            description: 'Group two Project, Online Community for selling, renting and buying used event items',
             photo: special,
             url: "https://something-special2380.herokuapp.com/login",
             github: "https://github.com/Nickhill2380/something-special"
         },
         {
             name: "Dungeon's End",
-            description: 'Group one Project',
+            description: 'Group one Project, DnD inspired turn based combat game',
             photo: dungeon,
             url: "https://nickhill2380.github.io/dungeons-end/",
             github: "https://github.com/Nickhill2380/dungeons-end"
         },
         {
-            name: "Run Buddy",
-            description: "Connects users to fitness trainers",
-            photo: run,
-            url: "https://nickhill2380.github.io/run-buddy/",
-            github: "https://github.com/Nickhill2380/run-buddy"
+            name: "Note Taker",
+            description: "Application that allows users to make notes that can be viewed later and deleted",
+            photo: notes,
+            url: "https://note-taker-2380.herokuapp.com/notes",
+            github: "https://github.com/Nickhill2380/note-taker"
         },
         {
-            name: "Food Festival",
-            description: "Keeps users informed about upcoming food festivals",
-            photo: food,
-            url: "https://nickhill2380.github.io/food-festival/",
-            github: "https://github.com/Nickhill2380/food-festival"
+            name: "Pizza Hunt",
+            description: "Online community to discuss people's favorite pizzas",
+            photo: pizza,
+            url: "https://pizza-hunt2380.herokuapp.com/",
+            github: "https://github.com/Nickhill2380/pizza-hunt"
         },
         {
             name: "Budget Tracker",
