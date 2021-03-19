@@ -5,7 +5,7 @@ import run from '../../assets/images/run-buddy.png';
 import food from '../../assets/images/food-festival.png';
 import tech from '../../assets/images/tech-blog.png';
 import budget from '../../assets/images/budget-tracker.png';
-import githubLogo from '../../assets/icons/GitHub-Mark-32px.png';
+import Project from '../Project/index.js';
 
 function Portfolio() {
 
@@ -54,46 +54,13 @@ function Portfolio() {
         }
     ])
 
-    const[isShown, setIsShown] = useState(false);
-
     return (
-        <div className="project-container"
-           
-        >
+        <div className="project-container">
             {projects.map((image) => (
-                <>
-                
-                {!isShown && (<img
-                onMouseEnter={() => {
-                    setIsShown(true);
-                }}
-                onMouseLeave={() => setIsShown(false)}
-                src={image.photo}
-                alt={image.name}
-                className="img-thumbnail mx-1"
-                key={image.name}
-                /> )}
-                
-            {isShown &&(
-                <div className="img-info mx1" 
-                style={{backgroundImage: `url(${image.photo})`}}
-                key={image.name}
-                onMouseLeave={() => {
-                    setIsShown(false);
-                }}
-                >
-                        <a href={image.url} className="img-details">{image.name}</a>
-                        <a href={image.github} className="img-details"><img src={githubLogo} alt="Github"></img></a>
-                        <p className="img-details">{image.description}</p>
-                        
-                        </div>
-                    
-                    )
-                }
-            
-            
-            </>
-            ))}
+                <Project 
+                    image ={image}
+                />
+             ))}
             
         </div>
     )

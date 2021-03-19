@@ -88,7 +88,6 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: var(--tertiary-color)
 }
 
 
@@ -172,8 +171,8 @@ h2 {
 }
 
 .img-thumbnail {
-    width: 25%;
-    min-height: 300px;
+    width: 400px;
+    height: 400px;
     background-size: cover;
     display: flex;
     padding: 50px;
@@ -185,7 +184,7 @@ h2 {
 }
 
 .img-info {
-    width: 25%;
+    width: 300px;
     min-height: 300px;
     background-size: cover;
     display: flex;
@@ -202,8 +201,13 @@ h2 {
 .img-details{
   display: flex;
   font-size: 25px;
-  padding: 25px;
+  padding: 5px;
   color: var(--primary-color);
   background-color: var(--tertiary-color);
   font-size: bold;
+}
+
+.project-container {
+  display:flex;
+  flex-wrap: wrap;
 }
