@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import * as emailjs from 'emailjs-com';
 
 import { validateEmail } from '../../utils/helpers';
 
@@ -10,10 +11,31 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const { name, email, message} = formState;
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: 'Nick',
+      message_html: message
+    };
+    
+
     if (!errorMessage) {
       console.log('Submit Form', formState);
-    }
-  };
+      emailjs.send(
+        'service_f6h4r1g',
+        'template_t66s8v7',
+        templateParams,
+        'user_pciNFsQ1kypWVoZtxq4GU'
+      )
+      alert('Your message has been sent successfully. I will contact you soon.');
+      resetForm();
+      }
+    };
+
+    const resetForm = () =>{
+      setFormState({ name: '', email: '', message: ''})
+    };
 
   const handleChange = (e) => {
     if (e.target.name === 'email') {
@@ -43,22 +65,22 @@ function ContactForm() {
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+          <input type="text" name="name" value={name} onChange={handleChange} onBlur={handleChange} />
         </div>
         <div>
           <label htmlFor="email">Email:</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+          <input type="email" name="email" value={email} onChange={handleChange} onBlur={handleChange} />
         </div>
         <div>
           <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+          <textarea name="message" rows="5" value={message} onChange={handleChange} onBlur={handleChange} />
         </div>
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">Submit</button>
+        <button type="submit">Submit</button>
       </form>
       </div>
     </section>
