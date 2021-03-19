@@ -18,7 +18,7 @@ function Project(props) {
                 /> )}
                 
             {isShown && (
-                <div className="img-info mx1" 
+                <div className="img-info mx-1" 
                 style={{backgroundImage: `url(${image.photo})`}}
                 key={image.name}
                 onMouseLeave={() => {

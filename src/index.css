@@ -3,6 +3,8 @@
   --primary-color: #1f6f8b;
   --secondary-color: #99a8b2;
   --tertiary-color: #e6d5b8;
+  --spacing-one: calc(1rem * 0.5);
+  --spacing-two: calc(1rem);
 }
 
 body {
@@ -50,7 +52,9 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   color: var(#1c2b2d);
-  background-color: var(--tertiary-color);
+  background-image: url(../src/assets/images/header-background.png);
+  width: 100%;
+  background-repeat: no-repeat;
 }
 
 header h1 {
@@ -228,3 +232,12 @@ h2 {
   flex-wrap: wrap;
 }
 
+.mx-1 {
+  margin-right: var(--spacing-one);
+  margin-left: var(--spacing-one);
+}
+
+.mx-2 {
+  margin-right: var(--spacing-two);
+  margin-left: var(--spacing-two);
+}
