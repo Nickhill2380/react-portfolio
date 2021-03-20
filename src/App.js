@@ -8,8 +8,7 @@ import Resume from './components/Resume';
 
 function App() {
 
-  // const [contactSelected, setContactSelected] = useState(false);
-  // const [resumeSelected, setResumeSelected] = useState(false);
+
   const [focus] = useState([
         'About',
         'Portfolio',
