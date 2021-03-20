@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Nickhill2380/react-portfolio.git/static/css/main.380e74fe.chunk.css",
+    "main.js": "/Nickhill2380/react-portfolio.git/static/js/main.0f63bf5a.chunk.js",
+    "main.js.map": "/Nickhill2380/react-portfolio.git/static/js/main.0f63bf5a.chunk.js.map",
+    "runtime-main.js": "/Nickhill2380/react-portfolio.git/static/js/runtime-main.e1f192e8.js",
+    "runtime-main.js.map": "/Nickhill2380/react-portfolio.git/static/js/runtime-main.e1f192e8.js.map",
+    "static/js/2.d8b141c5.chunk.js": "/Nickhill2380/react-portfolio.git/static/js/2.d8b141c5.chunk.js",
+    "static/js/2.d8b141c5.chunk.js.map": "/Nickhill2380/react-portfolio.git/static/js/2.d8b141c5.chunk.js.map",
+    "static/js/3.b19660ae.chunk.js": "/Nickhill2380/react-portfolio.git/static/js/3.b19660ae.chunk.js",
+    "static/js/3.b19660ae.chunk.js.map": "/Nickhill2380/react-portfolio.git/static/js/3.b19660ae.chunk.js.map",
+    "index.html": "/Nickhill2380/react-portfolio.git/index.html",
+    "static/css/main.380e74fe.chunk.css.map": "/Nickhill2380/react-portfolio.git/static/css/main.380e74fe.chunk.css.map",
+    "static/js/2.d8b141c5.chunk.js.LICENSE.txt": "/Nickhill2380/react-portfolio.git/static/js/2.d8b141c5.chunk.js.LICENSE.txt",
+    "static/media/LI-In-Bug.97665f1b.png": "/Nickhill2380/react-portfolio.git/static/media/LI-In-Bug.97665f1b.png",
+    "static/media/budget-tracker.b40f25d0.png": "/Nickhill2380/react-portfolio.git/static/media/budget-tracker.b40f25d0.png",
+    "static/media/desktop.91d7e060.jpg": "/Nickhill2380/react-portfolio.git/static/media/desktop.91d7e060.jpg",
+    "static/media/dungeonsend.fea5318c.png": "/Nickhill2380/react-portfolio.git/static/media/dungeonsend.fea5318c.png",
+    "static/media/index.css": "/Nickhill2380/react-portfolio.git/static/media/header-background.b9df0423.png",
+    "static/media/nick-hill-resume.ae8f4f71.pdf": "/Nickhill2380/react-portfolio.git/static/media/nick-hill-resume.ae8f4f71.pdf",
+    "static/media/note-taker.e11c87e8.png": "/Nickhill2380/react-portfolio.git/static/media/note-taker.e11c87e8.png",
+    "static/media/profile-pic.82f03250.jpg": "/Nickhill2380/react-portfolio.git/static/media/profile-pic.82f03250.jpg",
+    "static/media/resume-photo.44680997.png": "/Nickhill2380/react-portfolio.git/static/media/resume-photo.44680997.png",
+    "static/media/something-special.66de411c.png": "/Nickhill2380/react-portfolio.git/static/media/something-special.66de411c.png",
+    "static/media/tech-blog.575a8b97.png": "/Nickhill2380/react-portfolio.git/static/media/tech-blog.575a8b97.png",
+    "static/media/work-day-scheduler.bf1420be.png": "/Nickhill2380/react-portfolio.git/static/media/work-day-scheduler.bf1420be.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e1f192e8.js",
+    "static/js/2.d8b141c5.chunk.js",
+    "static/css/main.380e74fe.chunk.css",
+    "static/js/main.0f63bf5a.chunk.js"
+  ]
+}
