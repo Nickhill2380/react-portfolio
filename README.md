@@ -7,6 +7,9 @@ This Portfolio will serve as a living website, which I will use as a tool to giv
 ## Usage
 Below is a screenshot of the website, https://nickhill2380.github.io/react-portfolio/
 
+![image](https://user-images.githubusercontent.com/71850826/111885131-314d8700-899c-11eb-8343-4ec180bc8bfc.png)
+
+
 
 
 # Credits
