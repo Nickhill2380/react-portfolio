@@ -2,7 +2,7 @@ import { useState } from "react"
 import special from '../../assets/images/something-special.png';
 import dungeon from '../../assets/images/dungeonsend.png';
 import notes from '../../assets/images/note-taker.png';
-import pizza from '../../assets/images/pizza-hunt.png';
+import work from '../../assets/images/work-day-scheduler.png';
 import tech from '../../assets/images/tech-blog.png';
 import budget from '../../assets/images/budget-tracker.png';
 import Project from '../Project/index.js';
@@ -32,11 +32,11 @@ function Portfolio() {
             github: "https://github.com/Nickhill2380/note-taker"
         },
         {
-            name: "Pizza Hunt",
-            description: "Online community to discuss people's favorite pizzas",
-            photo: pizza,
-            url: "https://pizza-hunt2380.herokuapp.com/",
-            github: "https://github.com/Nickhill2380/pizza-hunt"
+            name: "Work Day Scheduler",
+            description: "A daily planner that stores task and keeps track of the time to let you know if tasks are late.",
+            photo: work,
+            url: "https://nickhill2380.github.io/work-day-scheduler/",
+            github: "https://github.com/Nickhill2380/work-day-scheduler"
         },
         {
             name: "Budget Tracker",
