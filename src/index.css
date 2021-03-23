@@ -184,18 +184,6 @@ h2 {
   background: var(--tertiary-color);
 }
 
-.img-thumbnail {
-    width: 400px;
-    height: 400px;
-    background-size: cover;
-    display: flex;
-    padding: 50px;
-    align-items: flex-end;
-    position: relative;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .img-info {
     width: 300px;
@@ -203,6 +191,7 @@ h2 {
     background-size: cover;
     display: flex;
     padding: 50px;
+    margin-bottom: 25px;
     align-items: flex-end;
     position: relative;
     overflow: hidden;
