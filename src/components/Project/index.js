@@ -7,7 +7,7 @@ function Project(props) {
     const {image} = props;
 
     return(
-        <div 
+        <div className="project-container"
         onMouseEnter={()=>setIsShown(true)}
         onMouseLeave={() => setIsShown(false)}>
             {!isShown && (<div className="img-info mx-1" 
