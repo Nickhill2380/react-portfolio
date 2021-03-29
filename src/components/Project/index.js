@@ -10,28 +10,25 @@ function Project(props) {
         <div className="project-container"
         onMouseEnter={()=>setIsShown(true)}
         onMouseLeave={() => setIsShown(false)}>
-            {!isShown && (<div className="img-info mx-1" 
-                style={{backgroundImage: `url(${image.photo})`}}
-                key={image.name}
-                alt={image.name}
-                >                       
-                </div> )}
-                
-            {isShown && (
-                <div className="img-info mx-1" 
+            <div className="img-info mx-1" 
                 style={{backgroundImage: `url(${image.photo})`}}
                 key={image.name}
                 alt={image.name}
                 >
+
+            {isShown && (
                 
+                <>
                 <a href={image.url} className="img-details">{image.name}</a>
                 <a href={image.github} className="img-details"><img src={githubLogo} alt="Github"></img></a>
                 <p className="img-details">{image.description}</p>
                         
-                </div>
+                </>
                     
                     )
-                }
+                }                       
+                </div> 
+                
             
         </div>
     )
